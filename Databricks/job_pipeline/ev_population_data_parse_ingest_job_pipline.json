@@ -1,0 +1,51 @@
+{
+    "job_id": 48140929617912,
+    "creator_user_name": "zenken@gmail.com",
+    "run_as_user_name": "zenken@gmail.com",
+    "run_as_owner": true,
+    "settings": {
+        "name": "load_json_ingest_archive",
+        "email_notifications": {
+            "no_alert_for_skipped_runs": false
+        },
+        "webhook_notifications": {},
+        "timeout_seconds": 0,
+        "max_concurrent_runs": 1,
+        "tasks": [
+            {
+                "task_key": "load_json_and_ingest",
+                "notebook_task": {
+                    "notebook_path": "/my_workspace/ingest_ev_population_json_data",
+                    "source": "WORKSPACE"
+                },
+                "existing_cluster_id": "0315-222650-aq2iiar6",
+                "max_retries": 1,
+                "min_retry_interval_millis": 900000,
+                "retry_on_timeout": false,
+                "timeout_seconds": 0,
+                "email_notifications": {
+                    "on_failure": [
+                        "zenken@gmail.com"
+                    ]
+                }
+            },
+            {
+                "task_key": "archive_the_src",
+                "depends_on": [
+                    {
+                        "task_key": "load_json_and_ingest"
+                    }
+                ],
+                "notebook_task": {
+                    "notebook_path": "/my_workspace/archive_src_file",
+                    "source": "WORKSPACE"
+                },
+                "existing_cluster_id": "0315-222650-aq2iiar6",
+                "timeout_seconds": 0,
+                "email_notifications": {}
+            }
+        ],
+        "format": "MULTI_TASK"
+    },
+    "created_time": 1678909701543
+}
