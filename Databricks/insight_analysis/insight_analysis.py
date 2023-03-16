@@ -5,7 +5,7 @@ import pyspark.sql.functions as F
 # COMMAND ----------
 
 dfData = spark.sql("select * from ev_pop_data")
-display(dfData)
+dfData.show()
 
 # COMMAND ----------
 
