@@ -13,8 +13,8 @@ import snowflake.snowpark.functions as F
 
 connection_parameters = {
     "account": "whpxseb-ke63785",
-    "user": "zenken",
-    "password": "Josh0814!",
+    "user": "<username>",
+    "password": "<password>",
     "role": "ACCOUNTADMIN",
     "warehouse": "MYWH2",
     "database": "EV_POP_DATA2",
