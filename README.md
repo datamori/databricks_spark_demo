@@ -1,1 +1,1 @@
-# sf_interview_demo
+# Databricks/Spark job JSON document parsing POC
