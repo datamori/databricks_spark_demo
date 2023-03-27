@@ -1,1 +1,1 @@
-# Databricks/Spark job JSON document parsing POC
+# Databricks/Spark JSON parsing demo
