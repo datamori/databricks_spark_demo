@@ -1,7 +1,7 @@
 {
     "job_id": 48140929617912,
-    "creator_user_name": "zenken@gmail.com",
-    "run_as_user_name": "zenken@gmail.com",
+    "creator_user_name": "<me>",
+    "run_as_user_name": "<me>",
     "run_as_owner": true,
     "settings": {
         "name": "load_json_ingest_archive",
@@ -25,7 +25,7 @@
                 "timeout_seconds": 0,
                 "email_notifications": {
                     "on_failure": [
-                        "zenken@gmail.com"
+                        "<me>"
                     ]
                 }
             },

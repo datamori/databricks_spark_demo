@@ -1,7 +1,7 @@
 # Databricks notebook source
 # snowflake connection options
 sfOptions = {
-  "sfURL": "https://whpxseb-ke63785.snowflakecomputing.com",
+  "sfURL": "https://<sf url>",
   "sfUser": "<username>",
   "sfPassword": "<passoword>",
   "sfDatabase": "EV_POP_DATA",
