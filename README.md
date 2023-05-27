@@ -11,3 +11,5 @@ Essentially, the dataset represents a NoSQL dataset in JSON format, which appear
 In response, I affirmed that it is indeed possible to achieve this transformation using Spark, as Spark is capable of performing any data transformation. However, the key determinant of a successful solution lies in selecting an appropriate method for iterating, parsing, and flattening the multi-level nested structure of the JSON document within the Spark framework.
 
 This Repo shares a quick but very optimal & effective my way of Spark implementation does the job.
+
+![Alt text](https://github.com/datamori/databricks_spark_demo/blob/main/Databricks_Spark_processing_%20data%20minging%20from%20front-end%20Json%20dataset%20%20.jpg)
